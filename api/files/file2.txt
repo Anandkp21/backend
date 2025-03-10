@@ -1,0 +1,11 @@
+User Instructions:
+
+1. You've successfully logged in as a regular user
+2. You can view this file and file1.txt
+3. There's a third file (file3.txt) that only admins can access
+4. To complete the challenge, find a way to access file3.txt
+
+Hint: Take a close look at the JWT token and how it's being verified.
+Remember that JWT consists of three parts: header.payload.signature
+
+Can you manipulate the token to gain admin privileges?
