@@ -1,0 +1,18 @@
+CONGRATULATIONS! You've successfully completed the JWT challenge!
+
+FLAG: CTF{JwT_4lG0r!ThM_N0n3_@tt@ck_Succ3ssfu1}
+
+
+You bypassed the JWT authentication by exploiting a vulnerability in the token verification.
+This is a common vulnerability when JWT libraries are improperly configured to accept
+the "none" algorithm, essentially bypassing signature verification.
+
+In a real application, this could allow attackers to escalate privileges and access
+sensitive data or functionality reserved for administrators.
+
+Remember these security best practices for JWT implementation:
+1. Always validate the signature with a strong secret key
+2. Never accept the "none" algorithm in production
+3. Implement proper algorithm validation
+4. Use a whitelist approach for algorithms
+5. Include expiration times in tokens

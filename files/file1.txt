@@ -1,0 +1,6 @@
+Welcome to the JWT Challenge!
+
+This is the first file that regular users can access.
+Nothing special here, just some text to show that you have standard user access.
+
+Keep exploring the application to find the vulnerability!
