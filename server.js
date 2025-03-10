@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors');  // Importing the cors package
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 // This is intentionally weak for the challenge
 const JWT_SECRET = 'jwt_challenge_123'; 
 
+app.use(cors());  // Enable CORS for all origins, you can customize this later.
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
